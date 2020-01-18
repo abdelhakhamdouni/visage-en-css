@@ -1,0 +1,184 @@
+.dessin{
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+}
+.left{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.right{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+}
+.top{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20%;
+
+}
+.bottom{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20%;
+
+}
+
+.top:hover ~ .visage .oil-droit .momo{
+    top: 20%
+}
+.top:hover ~ .visage .oil-gauche .momo{
+    top: 20%
+}
+
+.bottom:hover ~ .visage .oil-droit .momo{
+    bottom: -20%;
+    top: auto;
+}
+.bottom:hover ~ .visage .oil-gauche .momo{
+    bottom: -20%;
+    top: auto;
+}
+
+.left:hover ~ .visage .oil-droit .momo{
+    left: 20%
+}
+.left:hover ~ .visage .oil-gauche .momo{
+    left: 20%
+}
+
+.right:hover ~ .visage .oil-droit .momo{
+    right: -20%;
+    left: auto;
+}
+.right:hover ~ .visage .oil-gauche .momo{
+    right: -20%;
+    left: auto;
+}
+
+
+
+.visage{
+    width: 50%;
+    height: 55%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 20, 20);
+    border-radius: 50%;
+    transition: background-color .4s;
+    
+}
+.visage:hover{
+    background-color: tomato;
+}
+.visage:hover .bouche{
+    border-bottom: 0;
+    border-top: 25px solid blanchedalmond;
+    bottom: 0%;
+}
+.visage:hover .oil-droit {
+    width: 15%;
+    height: 15%;
+    right: 24%;
+}
+.visage:hover .oil-gauche{
+    width: 15%;
+    height: 15%;
+    left: 24%;
+}
+.oil-droit, .oil-gauche{
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    width: 20%;
+    height: 10%;
+    transition: all .5s ease;
+}
+.oil-droit{
+    right: 23%;
+}
+.oil-gauche{
+    
+    left: 23%;
+}
+.momo{
+    width: 35%;
+    height: 40%;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nez{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 25px solid blanchedalmond;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bouche{
+    width: 35%;
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    border-top: 0;
+    border-bottom: 25px solid blanchedalmond;
+    border-radius: 50%;
+    transition: border .3s ease-in-out;
+}
+.oreil-gauche{
+    width: 10%;
+    height: 30%;
+    position: absolute;
+    left: -15%;
+    top: 32%;
+    border-right: 25px solid blanchedalmond;
+    border-radius: 50%;
+}
+.oreil-droit{
+    width: 10%;
+    height: 30%;
+    position: absolute;
+    right: -15%;
+    top: 32%;
+    border-left: 25px solid blanchedalmond;
+    border-radius: 50%;
+}
+.cheveux{
+    width: 80%;
+    height: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-top: 30px solid whitesmoke;
+    border-radius: 50%;
+    top: 0;
+}
